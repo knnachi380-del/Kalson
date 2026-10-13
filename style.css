@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: #f5f7fa;
+    line-height: 1.6;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+}
+header h1 { color: #38bdf8; font-size: 28px; }
+header p { color: #cbd5e1; margin-top: 8px; }
+main { max-width: 800px; margin: auto; }
+.card {
+    background: #111e30;
+    padding: 22px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    border: 1px solid #26384e;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
+.card h2 { color: #38bdf8; margin-bottom: 15px; }
+label { display: block; margin-top: 16px; margin-bottom: 6px; font-weight: bold; }
+select, textarea, input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #52657c;
+    background: #07111f;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+textarea { min-height: 110px; resize: vertical; }
+button {
+    padding: 12px 18px;
+    margin: 8px 5px 0 0;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #07111f;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+button:hover {
+    background: white;
+    box-shadow: 0 0 16px #38bdf8;
+    transform: translateY(-2px);
+}
+button.clear { background: #334155; color: white; }
+#result, #formula {
+    background: #07111f;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-wrap: anywhere;
+}
+#result { min-height: 75px; }
+#result p, #formula p { margin-bottom: 8px; }
+.error { color: #fca5a5; }
+.success { color: #86efac; }
+footer { text-align: center; padding: 20px 5px; color: #94a3b8; font-size: 13px; }
+@media (max-width: 600px) {
+    body { padding: 12px; }
+    header h1 { font-size: 23px; }
+    .card { padding: 16px; }
+    button { width: 100%; margin: 6px 0; }
+}

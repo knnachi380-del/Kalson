@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Statistics Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📊 Statistics Solver Pro</h1>
+        <p>Your Advanced Statistics Calculator</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Select Statistical Operation</h2>
+            <select id="operation">
+                <option value="descriptive">Descriptive Statistics</option>
+                <option value="correlation">Pearson Correlation</option>
+                <option value="regression">Linear Regression</option>
+                <option value="zscore">Z-Score</option>
+                <option value="binomial">Binomial Probability</option>
+                <option value="normal">Normal Distribution</option>
+                <option value="confidence">Confidence Interval for Mean</option>
+                <option value="ttest">One-Sample T-Test</option>
+            </select>
+            <label for="data">Dataset (comma-separated numbers)</label>
+            <textarea id="data" placeholder="Example: 12, 15, 18, 20, 25"></textarea>
+            <div id="extraInputs"></div>
+            <button id="solveButton">Solve Problem</button>
+            <button class="clear" id="clearButton">Clear</button>
+        </section>
+        <section class="card">
+            <h2>Results</h2>
+            <div id="result">Your statistical results will appear here.</div>
+        </section>
+        <section class="card">
+            <h2>Formula / Explanation</h2>
+            <div id="formula">Select an operation to see its requirements.</div>
+        </section>
+    </main>
+    <footer><p>Statistics Solver Pro | Learn • Calculate • Analyze</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
